@@ -1,0 +1,38 @@
+# Local secrets and runtime state
+.env
+.env.*
+auth.json
+*.lock
+*.pid
+*.key
+*.pem
+id_rsa
+id_ed25519
+
+# Hermes runtime databases/state
+state.db*
+kanban.db
+sessions/
+logs/
+cache/
+audio_cache/
+image_cache/
+.cache/
+
+# Local tooling
+.DS_Store
+Thumbs.db
+node_modules/
+__pycache__/
+*.pyc
+
+# Snapshot safety
+snapshots/hermes/.env
+snapshots/hermes/auth.json
+snapshots/hermes/state.db*
+snapshots/hermes/kanban.db
+snapshots/hermes/sessions/
+snapshots/hermes/logs/
+snapshots/hermes/cache/
+snapshots/hermes/audio_cache/
+snapshots/hermes/image_cache/

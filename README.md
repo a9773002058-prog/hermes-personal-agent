@@ -1,0 +1,82 @@
+# Hermes Personal Agent Ops Repo
+
+This repository is not the Hermes source code. It is a private operations and project repository for the existing Hermes personal agent running on the VDS `178.104.60.170`.
+
+It tracks safe project knowledge: architecture notes, runbooks, sanitized snapshots, current state, and future plans for developing Hermes into a personal multi-agent system.
+
+## Server Defaults
+
+- SSH host: `178.104.60.170`
+- SSH user: `root`
+- SSH port: `22`
+- SSH key: `C:\Users\User\.ssh\hermes-vds\hermes_vds_ed25519`
+- Hermes user: `hermes`
+- Hermes home: `/home/hermes/.hermes`
+- Hermes workspace: `/srv/hermes/workspace`
+- Gateway service: `hermes-gateway.service`
+
+## Sync From VDS
+
+On Windows PowerShell:
+
+```powershell
+.\scripts\sync-from-vds.ps1
+```
+
+On Linux/macOS/Git Bash:
+
+```sh
+./scripts/sync-from-vds.sh
+```
+
+The sync copies only safe project state and excludes secrets, auth files, databases, caches, logs, sessions, locks, and private keys.
+
+## Healthcheck
+
+On Windows PowerShell:
+
+```powershell
+.\scripts\healthcheck.ps1
+```
+
+On Linux/macOS/Git Bash:
+
+```sh
+./scripts/healthcheck.sh
+```
+
+The healthcheck checks the systemd gateway service, workspace presence, available Hermes version hints, and whether secret-bearing env files exist without printing their contents.
+
+## Before Commit
+
+Always run:
+
+```powershell
+.\scripts\verify-no-secrets.ps1
+```
+
+or:
+
+```sh
+./scripts/verify-no-secrets.sh
+```
+
+Never commit Telegram tokens, OAuth tokens, API keys, SSH private keys, `.env`, `auth.json`, cookies, sessions, logs, or Hermes runtime databases.
+
+## Adding Integrations Safely
+
+Integration credentials must stay on the VDS or in an approved secret store. This repo may document required variables, scopes, setup steps, and verification commands, but must not store actual credentials.
+
+Any integration that reads or changes external systems, such as Notion, Todoist, Google Workspace, CRM, billing, or email, needs separate confirmation before real credentials are added or write actions are enabled.
+
+## Working With Codex or Claude
+
+Start by reading `AGENTS.md`, `docs/current-state.md`, and the relevant runbooks. Document every VDS change in this repo. Run secret verification before every commit and keep GitHub visibility private.
+
+## Next Steps
+
+1. Fix SSH key access if healthcheck still reports `Permission denied`.
+2. Run `scripts/sync-from-vds.ps1`.
+3. Review sanitized snapshots.
+4. Run `scripts/verify-no-secrets.ps1`.
+5. Commit and push to the private GitHub repository.
