@@ -57,6 +57,10 @@ Observed state:
 
 Conclusion: copywriter deployment cannot be applied while the VDS is in rescue mode. Boot the VDS back into the normal installed system first, then rerun `scripts/deploy-copywriter-agent.ps1`.
 
+Follow-up after disabling rescue mode: SSH key authentication is rejected again for both `root` and `hermes`. This likely means the public key was available only in the rescue environment or provider rescue access, not in the normal installed system's `authorized_keys`.
+
+Next required action: add the local public key to the normal installed system, preferably `/root/.ssh/authorized_keys` if root SSH login is allowed, or to the actual admin user used by the Hermes installation.
+
 Prepared files:
 
 - `deploy/hermes/skills/copywriter-agent/SKILL.md`
