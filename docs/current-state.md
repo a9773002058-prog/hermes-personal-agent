@@ -61,6 +61,10 @@ Follow-up after disabling rescue mode: SSH key authentication is rejected again 
 
 Next required action: add the local public key to the normal installed system, preferably `/root/.ssh/authorized_keys` if root SSH login is allowed, or to the actual admin user used by the Hermes installation.
 
+Follow-up in rescue mode on 2026-05-21: mounted the installed Ubuntu 22.04 system from `/dev/sda1`, verified that `hermes` user, `/home/hermes`, and `/srv/hermes` exist, and added the local public key to the installed system's `/root/.ssh/authorized_keys`. The disk was synced and unmounted cleanly.
+
+Next required action: disable rescue mode in the provider panel and reboot into the normal installed system. Then verify SSH key login for `root@178.104.60.170` and deploy the copywriter agent.
+
 Prepared files:
 
 - `deploy/hermes/skills/copywriter-agent/SKILL.md`
