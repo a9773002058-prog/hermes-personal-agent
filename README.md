@@ -47,6 +47,18 @@ On Linux/macOS/Git Bash:
 
 The healthcheck checks the systemd gateway service, workspace presence, available Hermes version hints, and whether secret-bearing env files exist without printing their contents.
 
+## Deploy Copywriter Agent
+
+The medical copywriter skill is prepared in `deploy/hermes/skills/copywriter-agent/` with supporting context in `deploy/hermes/workspace/docs/copywriting/`.
+
+After SSH access works:
+
+```powershell
+.\scripts\deploy-copywriter-agent.ps1
+```
+
+This copies the skill to `/home/hermes/.hermes/skills/copywriter-agent/`, copies copywriting context to `/srv/hermes/workspace/docs/copywriting/`, and restarts `hermes-gateway.service`.
+
 ## Before Commit
 
 Always run:
@@ -76,7 +88,8 @@ Start by reading `AGENTS.md`, `docs/current-state.md`, and the relevant runbooks
 ## Next Steps
 
 1. Fix SSH key access if healthcheck still reports `Permission denied`.
-2. Run `scripts/sync-from-vds.ps1`.
-3. Review sanitized snapshots.
-4. Run `scripts/verify-no-secrets.ps1`.
-5. Commit and push to the private GitHub repository.
+2. Deploy the copywriter agent with `scripts/deploy-copywriter-agent.ps1`.
+3. Run `scripts/sync-from-vds.ps1`.
+4. Review sanitized snapshots.
+5. Run `scripts/verify-no-secrets.ps1`.
+6. Commit and push to the private GitHub repository.

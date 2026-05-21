@@ -36,3 +36,32 @@ SHA256:yteP5DYgFogqJO3/LKcR+nPtb98+psrjCom1ghSwDxw
 - Sync safe snapshots.
 - Verify no secrets.
 - Create private GitHub repository and push.
+
+## Copywriter Agent
+
+Status: prepared locally, not yet deployed to VDS because SSH key login still returns `Permission denied (publickey)`.
+
+Deploy attempt on 2026-05-21 failed before copying files because SSH authentication was rejected for `root@178.104.60.170`.
+
+Prepared files:
+
+- `deploy/hermes/skills/copywriter-agent/SKILL.md`
+- `deploy/hermes/workspace/docs/copywriting/voice-guide.md`
+- `deploy/hermes/workspace/docs/copywriting/medical-claims-policy.md`
+- `deploy/hermes/workspace/docs/copywriting/banned-phrases.md`
+- `deploy/hermes/workspace/docs/copywriting/headline-bank.md`
+- `deploy/hermes/workspace/docs/copywriting/offers.md`
+- `deploy/hermes/workspace/docs/copywriting/swipe-file.md`
+- `scripts/deploy-copywriter-agent.ps1`
+- `scripts/deploy-copywriter-agent.sh`
+
+Target deployment paths:
+
+- `/home/hermes/.hermes/skills/copywriter-agent/SKILL.md`
+- `/srv/hermes/workspace/docs/copywriting/`
+
+Once SSH access works, run:
+
+```powershell
+.\scripts\deploy-copywriter-agent.ps1
+```
