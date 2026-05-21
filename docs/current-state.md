@@ -43,6 +43,20 @@ Status: prepared locally, not yet deployed to VDS because SSH key login still re
 
 Deploy attempt on 2026-05-21 failed before copying files because SSH authentication was rejected for `root@178.104.60.170`.
 
+Follow-up on 2026-05-21: SSH key login started working after the VDS restart, but the server booted into rescue mode.
+
+Observed state:
+
+- hostname: `rescue`
+- OS: Debian GNU/Linux 12 rescue environment
+- root filesystem: `overlay`
+- main disk visible as `sda`
+- no `hermes` Linux user in the running rescue environment
+- no `/srv/hermes` in the running rescue environment
+- no `hermes-gateway.service` unit in the running rescue environment
+
+Conclusion: copywriter deployment cannot be applied while the VDS is in rescue mode. Boot the VDS back into the normal installed system first, then rerun `scripts/deploy-copywriter-agent.ps1`.
+
 Prepared files:
 
 - `deploy/hermes/skills/copywriter-agent/SKILL.md`
