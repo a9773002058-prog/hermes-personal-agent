@@ -18,12 +18,12 @@ function Invoke-HermesSsh {
     & ssh -i $Key -p $Port -o BatchMode=yes -o ConnectTimeout=10 -o StrictHostKeyChecking=no -o UserKnownHostsFile=$KnownHosts "$User@$HostName" $Command
 }
 
-Write-Host "Hermes healthcheck for $User@$HostName"
-Write-Host ("service.active=" + (Invoke-HermesSsh "systemctl is-active $Service 2>/dev/null || true"))
-Write-Host ("service.enabled=" + (Invoke-HermesSsh "systemctl is-enabled $Service 2>/dev/null || true"))
-Write-Host ("workspace.exists=" + (Invoke-HermesSsh "test -d '$Workspace' && echo yes || echo no"))
-Write-Host ("hermes.home.exists=" + (Invoke-HermesSsh "test -d '$HermesHome' && echo yes || echo no"))
-Write-Host ("config.exists=" + (Invoke-HermesSsh "test -f '$HermesHome/config.yaml' && echo yes || echo no"))
-Write-Host ("env.present=" + (Invoke-HermesSsh "test -f '$HermesHome/.env' && echo present || echo absent"))
-Write-Host ("auth_json.present=" + (Invoke-HermesSsh "test -f '$HermesHome/auth.json' && echo present || echo absent"))
-Write-Host ("hermes.version_hint=" + (Invoke-HermesSsh "command -v hermes >/dev/null 2>&1 && hermes --version 2>/dev/null || python3 -m hermes --version 2>/dev/null || echo unknown"))
+Write-Output "Hermes healthcheck for $User@$HostName"
+Write-Output ("service.active=" + (Invoke-HermesSsh "systemctl is-active $Service 2>/dev/null || true"))
+Write-Output ("service.enabled=" + (Invoke-HermesSsh "systemctl is-enabled $Service 2>/dev/null || true"))
+Write-Output ("workspace.exists=" + (Invoke-HermesSsh "test -d '$Workspace' && echo yes || echo no"))
+Write-Output ("hermes.home.exists=" + (Invoke-HermesSsh "test -d '$HermesHome' && echo yes || echo no"))
+Write-Output ("config.exists=" + (Invoke-HermesSsh "test -f '$HermesHome/config.yaml' && echo yes || echo no"))
+Write-Output ("env.present=" + (Invoke-HermesSsh "test -f '$HermesHome/.env' && echo present || echo absent"))
+Write-Output ("auth_json.present=" + (Invoke-HermesSsh "test -f '$HermesHome/auth.json' && echo present || echo absent"))
+Write-Output ("hermes.version_hint=" + (Invoke-HermesSsh "command -v hermes >/dev/null 2>&1 && hermes --version 2>/dev/null || python3 -m hermes --version 2>/dev/null || echo unknown"))

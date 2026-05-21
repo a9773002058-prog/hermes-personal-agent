@@ -65,6 +65,10 @@ Follow-up in rescue mode on 2026-05-21: mounted the installed Ubuntu 22.04 syste
 
 Next required action: disable rescue mode in the provider panel and reboot into the normal installed system. Then verify SSH key login for `root@178.104.60.170` and deploy the copywriter agent.
 
+Follow-up after normal boot on 2026-05-21: VDS booted as `med-ai` from `/dev/sda1`, SSH key login for `root` works, `hermes` user exists, `/srv/hermes` exists, and `hermes-gateway.service` is `active` and `enabled`.
+
+Copywriter agent deployment status: deployed successfully to `/home/hermes/.hermes/skills/copywriter-agent/SKILL.md`; copywriting context deployed to `/srv/hermes/workspace/docs/copywriting/`; `hermes-gateway.service` restarted and remained `active`.
+
 Prepared files:
 
 - `deploy/hermes/skills/copywriter-agent/SKILL.md`

@@ -31,9 +31,11 @@ for file in $FILES; do
       ;;
   esac
   if grep -EIn "$PATTERNS" "$file" >/tmp/hermes-secret-hit 2>/dev/null; then
-    echo "Potential secret in $file"
-    cat /tmp/hermes-secret-hit
-    FOUND=1
+    if grep -Ev '(api[_-]?key|token|secret|password|oauth[_-]?token)[[:space:]]*[:=][[:space:]]*REDACTED' /tmp/hermes-secret-hit >/tmp/hermes-secret-hit-filtered; then
+      echo "Potential secret in $file"
+      cat /tmp/hermes-secret-hit-filtered
+      FOUND=1
+    fi
   fi
 done
 

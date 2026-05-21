@@ -40,6 +40,9 @@ foreach ($File in $Files) {
         continue
     }
     foreach ($Match in $Matches) {
+        if ($Match.Line -match '(?i)\b(api[_-]?key|token|secret|password|oauth[_-]?token)\s*[:=]\s*REDACTED\b') {
+            continue
+        }
         Write-Host "Potential secret in ${Rel}:$($Match.LineNumber): $($Match.Line.Trim())"
         $Found = $true
     }

@@ -1,0 +1,21 @@
+﻿# /etc/systemd/system/hermes-gateway.service
+[Unit]
+Description=Hermes Agent Gateway for Personal Assistant
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=hermes
+Group=hermes
+Environment=HOME=/home/hermes
+Environment=PATH=/home/hermes/.local/bin:/usr/local/bin:/usr/bin:/bin
+WorkingDirectory=/srv/hermes/workspace
+ExecStart=/home/hermes/.local/bin/hermes gateway run
+Restart=on-failure
+RestartSec=10
+TimeoutStopSec=210
+KillMode=mixed
+
+[Install]
+WantedBy=multi-user.target

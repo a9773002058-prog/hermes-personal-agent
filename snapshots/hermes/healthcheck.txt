@@ -1,0 +1,9 @@
+﻿Hermes healthcheck for root@178.104.60.170
+service.active=active
+service.enabled=enabled
+workspace.exists=yes
+hermes.home.exists=yes
+config.exists=yes
+env.present=present
+auth_json.present=present
+hermes.version_hint=unknown
