@@ -1,4 +1,4 @@
-﻿/home/hermes/.hermes/skills/apple/DESCRIPTION.md
+/home/hermes/.hermes/skills/apple/DESCRIPTION.md
 /home/hermes/.hermes/skills/autonomous-ai-agents/DESCRIPTION.md
 /home/hermes/.hermes/skills/.bundled_manifest
 /home/hermes/.hermes/skills/copywriter-agent/SKILL.md
@@ -21,4 +21,6 @@
 /home/hermes/.hermes/skills/research/DESCRIPTION.md
 /home/hermes/.hermes/skills/smart-home/DESCRIPTION.md
 /home/hermes/.hermes/skills/social-media/DESCRIPTION.md
+/home/hermes/.hermes/skills/.usage.json
+/home/hermes/.hermes/skills/.usage.json.lock
 /home/hermes/.hermes/skills/yuanbao/SKILL.md

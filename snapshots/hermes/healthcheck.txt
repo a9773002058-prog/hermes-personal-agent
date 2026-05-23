@@ -1,4 +1,4 @@
-﻿Hermes healthcheck for root@178.104.60.170
+Hermes healthcheck for VPS nightly sync
 service.active=active
 service.enabled=enabled
 workspace.exists=yes
@@ -6,4 +6,4 @@ hermes.home.exists=yes
 config.exists=yes
 env.present=present
 auth_json.present=present
-hermes.version_hint=unknown
+synced_at_utc=2026-05-23T04:30:56Z

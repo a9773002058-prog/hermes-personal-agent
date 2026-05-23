@@ -1,4 +1,4 @@
-﻿# /etc/systemd/system/hermes-gateway.service
+# /etc/systemd/system/hermes-gateway.service
 [Unit]
 Description=Hermes Agent Gateway for Personal Assistant
 After=network-online.target
