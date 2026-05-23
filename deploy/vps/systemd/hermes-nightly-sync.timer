@@ -1,0 +1,12 @@
+[Unit]
+Description=Run Hermes safe snapshot sync nightly
+
+[Timer]
+OnCalendar=*-*-* 03:17:00
+RandomizedDelaySec=45m
+Persistent=true
+Unit=hermes-nightly-sync.service
+
+[Install]
+WantedBy=timers.target
+

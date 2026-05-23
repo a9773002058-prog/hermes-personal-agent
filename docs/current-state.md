@@ -69,6 +69,25 @@ Follow-up after normal boot on 2026-05-21: VDS booted as `med-ai` from `/dev/sda
 
 Copywriter agent deployment status: deployed successfully to `/home/hermes/.hermes/skills/copywriter-agent/SKILL.md`; copywriting context deployed to `/srv/hermes/workspace/docs/copywriting/`; `hermes-gateway.service` restarted and remained `active`.
 
+## Nightly GitHub Sync
+
+Status: installed and verified on 2026-05-23.
+
+Installed on VPS:
+
+- `/usr/local/bin/hermes-nightly-sync.sh`
+- `/etc/systemd/system/hermes-nightly-sync.service`
+- `/etc/systemd/system/hermes-nightly-sync.timer`
+- `/srv/hermes/github-sync/hermes-personal-agent`
+- `/home/hermes/.ssh/github_sync_ed25519`
+
+The GitHub deploy key is registered on the private repo with write access. Manual service test succeeded and pushed commit `c178e26` to GitHub.
+
+Timer status during setup:
+
+- `hermes-nightly-sync.timer`: active/waiting
+- next observed run: 2026-05-24 around 03:29 UTC
+
 Prepared files:
 
 - `deploy/hermes/skills/copywriter-agent/SKILL.md`

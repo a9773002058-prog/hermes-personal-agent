@@ -1,0 +1,12 @@
+[Unit]
+Description=Hermes safe nightly snapshot sync to GitHub
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=hermes
+Group=hermes
+WorkingDirectory=/srv/hermes
+ExecStart=/usr/local/bin/hermes-nightly-sync.sh
+
