@@ -1,0 +1,9 @@
+Hermes healthcheck for VPS nightly sync
+service.active=active
+service.enabled=enabled
+workspace.exists=yes
+hermes.home.exists=yes
+config.exists=yes
+env.present=present
+auth_json.present=present
+synced_at_utc=2026-05-24T03:50:30Z
