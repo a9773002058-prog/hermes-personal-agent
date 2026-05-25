@@ -134,7 +134,7 @@ textarea {
   justify-self: end;
   gap: 2px;
   padding: 3px;
-  border: 1px solid var(--line);
+  border: 2px solid var(--ink);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.74);
   backdrop-filter: blur(12px);
