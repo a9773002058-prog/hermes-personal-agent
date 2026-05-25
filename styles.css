@@ -421,15 +421,24 @@ h3 {
   transform: translateY(-3px);
 }
 
+.service-card h3,
+.article-card h3 {
+  font-family: var(--serif);
+  font-size: clamp(22px, 2vw, 26px);
+  font-weight: 400;
+  line-height: 1.22;
+}
+
 .service-card h3 {
-  margin: 72px 0 16px;
+  margin: 72px 0 14px;
 }
 
 .service-card p,
 .article-card p,
 .why-item p {
   color: var(--muted);
-  line-height: 1.6;
+  font-size: 15.5px;
+  line-height: 1.68;
 }
 
 .why {
@@ -498,10 +507,7 @@ h3 {
 }
 
 .article-card h3 {
-  margin: 58px 0 14px;
-  font-family: var(--serif);
-  font-size: 29px;
-  font-weight: 400;
+  margin: 48px 0 14px;
 }
 
 .contacts {
