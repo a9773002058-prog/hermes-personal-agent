@@ -1,7 +1,6 @@
 const header = document.querySelector("[data-header]");
 const menuToggle = document.querySelector("[data-menu-toggle]");
 const navLinks = document.querySelectorAll(".nav a");
-const form = document.querySelector("[data-contact-form]");
 
 const setHeaderState = () => {
   header.classList.toggle("is-scrolled", window.scrollY > 18);
@@ -35,15 +34,3 @@ const observer = new IntersectionObserver(
 );
 
 document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
-
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-  const hasContact = ["whatsapp", "telegram", "email"].some((name) => form.elements[name].value.trim());
-
-  if (!hasContact) {
-    form.elements.whatsapp.focus();
-    return;
-  }
-
-  window.location.href = "https://t.me/venusprevent_bot";
-});
