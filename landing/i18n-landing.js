@@ -88,6 +88,8 @@ const landingTranslationsDe = {
   "Врач по внутренней медицине (терапии) и кардиологии, врач-диетолог, гериатр, специалист по ортомолекулярной медицине.": "Ärztin für Innere Medizin und Kardiologie, Ernährungsmedizin, Geriatrie und orthomolekulare Medizin.",
   "Ваши данные обрабатываются строго конфиденциально. Результаты консультации и медицинская информация сохраняются в соответствии с требованиями GDPR и профессиональной врачебной тайны.": "Ihre Daten werden streng vertraulich verarbeitet. Beratungsergebnisse und medizinische Informationen werden gemäß DSGVO und ärztlicher Schweigepflicht geschützt.",
   "Запросы на запись и переписка в Telegram или WhatsApp защищены и используются только для организации консультации.": "Anfragen und Korrespondenz über Telegram oder WhatsApp werden geschützt und nur zur Organisation der Beratung genutzt.",
+  "Превентивная кардиология · Здоровое долголетие · Клинический нутрицолог-диетолог": "Präventive Kardiologie · Gesundes Altern · Klinische Ernährungsmedizin",
+  "Информация на сайте не заменяет очную диагностику и индивидуальную медицинскую консультацию.": "Die Informationen auf dieser Website ersetzen keine persönliche Diagnostik und keine individuelle ärztliche Beratung.",
   "Профилактическая кардиология. Все права защищены.": "Präventive Kardiologie. Alle Rechte vorbehalten.",
   "Онлайн консультации для пациентов в Европе и России": "Online-Beratungen für Patientinnen und Patienten in Europa und Russland"
 };

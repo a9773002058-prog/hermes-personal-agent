@@ -518,12 +518,51 @@
 
         /* Footer */
         footer {
+            display: grid;
+            grid-template-columns: 1fr minmax(260px, 0.55fr);
+            gap: 28px;
             background-color: var(--primary-color);
             color: var(--white);
-            text-align: center;
-            padding: 3rem;
+            text-align: left;
+            padding: 38px clamp(18px, 5vw, 72px);
             font-size: 1rem;
-            opacity: 0.9;
+        }
+
+        footer strong {
+            display: block;
+            font-size: 1.7rem;
+            font-weight: 700;
+            margin-bottom: 0.4rem;
+        }
+
+        footer p {
+            margin: 0.45rem 0 0;
+            color: rgba(255, 255, 255, 0.74);
+            line-height: 1.5;
+        }
+
+        .footer-legal {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 18px;
+        }
+
+        .footer-link {
+            display: inline-flex;
+            width: fit-content;
+            padding: 10px 15px;
+            border: 1px solid rgba(255, 255, 255, 0.55);
+            border-radius: 999px;
+            color: var(--white);
+            font-size: 0.92rem;
+            text-decoration: none;
+            transition: background 0.25s ease, border-color 0.25s ease;
+        }
+
+        .footer-link:hover {
+            background: rgba(255, 255, 255, 0.12);
+            border-color: rgba(255, 255, 255, 0.9);
         }
 
         /* FAQ Section */
@@ -951,6 +990,7 @@
 
             footer {
                 padding-bottom: 5rem;
+                grid-template-columns: 1fr;
             }
         }
 
@@ -1360,32 +1400,19 @@
         </div>
     </section>
 
-    <!-- Impressum Section -->
-    <section id="impressum" class="alternate">
-        <div class="container">
-            <h2 class="section-title">Impressum</h2>
-            <p>Dr. Veronika Sagitova, Dr.med<br>
-            Mitglied der Ärztekammer Brandenburg<br>
-            E-mail: info@aekb.de</p>
-            <p>Fachärztin für Innere Medizin und Kardiologie, Ernährungsmedizin, Geriatrie sowie Orthomolekulare Medizin<br>Врач по внутренней медицине (терапии) и кардиологии, врач-диетолог, гериатр, специалист по ортомолекулярной медицине.</p>
-        </div>
-    </section>
-
-    <!-- Datenschutz Section -->
-    <section id="datenschutz">
-        <div class="container">
-            <h2 class="section-title">Datenschutz</h2>
-            <p>Ваши данные обрабатываются строго конфиденциально. Результаты консультации и медицинская информация сохраняются в соответствии с требованиями GDPR и профессиональной врачебной тайны.</p>
-            <p>Запросы на запись и переписка в Telegram или WhatsApp защищены и используются только для организации консультации.</p>
-        </div>
-    </section>
-
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Dr. Veronika Sagitova. Профилактическая кардиология. Все права защищены.</p>
-        <p>Онлайн консультации для пациентов в Европе и России</p>
+        <div>
+            <strong>Dr Veronika Sagitova</strong>
+            <p>Превентивная кардиология · Здоровое долголетие · Клинический нутрицолог-диетолог</p>
+            <div class="footer-legal">
+                <a class="footer-link" href="../datenschutz.html">Datenschutzerklärung</a>
+                <a class="footer-link" href="../impressum.html">Impressum</a>
+            </div>
+        </div>
+        <p>Информация на сайте не заменяет очную диагностику и индивидуальную медицинскую консультацию.</p>
     </footer>
-    <script src="i18n-landing.js?v=de-landing-20260525"></script>
+    <script src="i18n-landing.js?v=legal-buttons-20260525"></script>
 </body>
 </html>
 
