@@ -195,12 +195,12 @@ h2 {
 
 h1 {
   max-width: 760px;
-  margin-bottom: 26px;
-  font-size: clamp(42px, 6.4vw, 88px);
+  margin-bottom: 22px;
+  font-size: clamp(36px, 5.2vw, 68px);
 }
 
 h2 {
-  font-size: clamp(38px, 5vw, 72px);
+  font-size: clamp(30px, 3.6vw, 52px);
 }
 
 h3 {
@@ -212,7 +212,7 @@ h3 {
 .hero-lead {
   max-width: 620px;
   color: var(--muted);
-  font-size: clamp(18px, 2vw, 23px);
+  font-size: clamp(17px, 1.6vw, 20px);
   line-height: 1.55;
 }
 
@@ -391,10 +391,10 @@ h3 {
 }
 
 .about-panel strong {
-  font-size: clamp(22px, 3vw, 34px);
+  font-size: clamp(20px, 2.2vw, 28px);
   font-family: var(--serif);
   font-weight: 400;
-  line-height: 1.08;
+  line-height: 1.14;
 }
 
 .services {
@@ -777,11 +777,11 @@ h3 {
   }
 
   h1 {
-    font-size: clamp(38px, 12vw, 56px);
+    font-size: clamp(34px, 10vw, 46px);
   }
 
   h2 {
-    font-size: clamp(34px, 11vw, 48px);
+    font-size: clamp(28px, 8.5vw, 38px);
   }
 
   .hero {
