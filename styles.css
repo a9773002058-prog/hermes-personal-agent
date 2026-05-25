@@ -320,6 +320,17 @@ h3 {
   text-transform: uppercase;
 }
 
+.article-card span {
+  display: inline-block;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
 .intro-strip {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
