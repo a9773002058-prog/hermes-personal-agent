@@ -650,20 +650,33 @@ h3 {
 }
 
 .article-content {
-  max-width: 980px;
+  max-width: 920px;
 }
 
 .article-title {
-  max-width: 820px !important;
-  font-size: clamp(36px, 5.2vw, 68px) !important;
-  line-height: 1.02 !important;
+  max-width: 760px !important;
+  margin-bottom: 22px !important;
+  font-size: clamp(30px, 3.2vw, 42px) !important;
+  line-height: 1.12 !important;
 }
 
 .article-lead {
-  max-width: 820px;
+  max-width: 860px;
   color: var(--ink) !important;
-  font-size: clamp(20px, 2.4vw, 28px) !important;
-  line-height: 1.55 !important;
+  font-size: 17px !important;
+  line-height: 1.65 !important;
+}
+
+.article-content h2 {
+  margin: 30px 0 12px;
+  font-size: clamp(21px, 2vw, 24px);
+  line-height: 1.24;
+}
+
+.article-content p,
+.article-content li {
+  font-size: 16px;
+  line-height: 1.72;
 }
 
 .article-content strong {
