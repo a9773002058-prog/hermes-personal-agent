@@ -6,7 +6,7 @@ const landingTranslationsDe = {
   "с разработкой персональной стратегии лечения и профилактики": "mit Entwicklung einer persönlichen Strategie für Behandlung und Prävention",
   "Dr. Veronika Sagitova, Dr.med": "Dr. Veronika Sagitova, Dr.med",
   "Врач по внутренней медицине (Innere Medizin), кардиолог, диетолог, гериатр": "Ärztin für Innere Medizin, Kardiologin, Ernährungsmedizinerin und Geriaterin",
-  "Практика в Германии": "Praxis in Deutschland",
+  "Практика в Германии": "",
   "Член Европейской ассоциации превентивной кардиологии (EAPC) и Профессиональной ассоциации немецких врачей-интернистов (BDI)": "Mitglied der European Association of Preventive Cardiology (EAPC) und des Berufsverbands Deutscher Internistinnen und Internisten e.V. (BDI)",
   "Я работаю с пациентом как с системой, а не набором симптомов": "Ich betrachte den Menschen als System, nicht als Sammlung einzelner Symptome",
   "Повышенное давление": "Erhöhter Blutdruck",
@@ -102,7 +102,7 @@ const translateLandingNode = (node, lang) => {
   if (!node.originalText) node.originalText = node.textContent;
   const key = node.originalText.trim().replace(/\s+/g, " ");
   if (!key) return;
-  node.textContent = lang === "de" && landingTranslationsDe[key] ? keepSpace(node.originalText, landingTranslationsDe[key]) : node.originalText;
+  node.textContent = lang === "de" && Object.prototype.hasOwnProperty.call(landingTranslationsDe, key) ? keepSpace(node.originalText, landingTranslationsDe[key]) : node.originalText;
 };
 
 const applyLandingLanguage = (lang) => {
