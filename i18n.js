@@ -301,7 +301,9 @@ const createLanguageSwitch = () => {
   switcher.className = "language-switch";
   switcher.dataset.languageSwitch = "";
   switcher.innerHTML = '<button type="button" data-lang-choice="ru">Русский</button><button type="button" data-lang-choice="de">Deutsch</button>';
-  document.body.prepend(switcher);
+  const headerSocials = document.querySelector(".header-socials");
+  if (headerSocials) headerSocials.appendChild(switcher);
+  else document.body.prepend(switcher);
   switcher.addEventListener("click", (event) => {
     const button = event.target.closest("[data-lang-choice]");
     if (button) applyLanguage(button.dataset.langChoice);
