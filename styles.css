@@ -291,22 +291,8 @@ h3 {
   background: var(--white);
 }
 
-.hero-proof {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
 .hero-socials {
   margin: 18px 0 0;
-}
-
-.hero-proof span {
-  padding: 9px 12px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  color: var(--muted);
-  font-size: 12px;
 }
 
 .hero-visual {
@@ -835,8 +821,7 @@ h3 {
     padding-bottom: 28px;
   }
 
-  .hero-actions,
-  .hero-proof {
+  .hero-actions {
     display: grid;
   }
 
