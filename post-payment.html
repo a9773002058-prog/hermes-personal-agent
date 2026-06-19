@@ -281,7 +281,7 @@
 <body>
   <main class="page">
     <header class="topbar">
-      <a class="brand" href="post-payment.html" data-i18n="brandLabel"><span>VS</span><strong>Dr Veronika Sagitova</strong></a>
+      <a class="brand" href="post-payment.html"><strong>Dr Veronika Sagitova</strong></a>
       <div class="language-switch" aria-label="Language switch">
         <button type="button" data-lang="ru" class="is-active">Русский</button>
         <button type="button" data-lang="de">Deutsch</button>
@@ -323,8 +323,8 @@
 
         <div class="actions">
           <a class="btn btn-dark" id="mailButton" href="#" aria-disabled="true" data-i18n="sendDocs">Отправить документы на e-mail</a>
-          <a class="btn" href="/datenschutz.html" target="_blank" rel="noopener" data-i18n="privacyLink">Политика конфиденциальности</a>
-          <a class="btn" href="/impressum.html" target="_blank" rel="noopener" data-i18n="impressumLink">Выходные данные</a>
+          <a class="btn" href="/datenschutz.html" target="_blank" rel="noopener" data-i18n="privacyLink" data-ru-href="/datenschutz.html" data-de-href="/datenschutz.html#de">Политика конфиденциальности</a>
+          <a class="btn" href="/impressum.html" target="_blank" rel="noopener" data-i18n="impressumLink" data-ru-href="/impressum.html" data-de-href="/impressum.html#de">Выходные данные</a>
         </div>
       </form>
     </section>
@@ -395,6 +395,9 @@
       document.querySelectorAll("[data-i18n]").forEach((node) => {
         const key = node.dataset.i18n;
         node.textContent = lang === "de" && translations.de[key] ? translations.de[key] : originalText.get(key);
+      });
+      document.querySelectorAll("[data-ru-href][data-de-href]").forEach((node) => {
+        node.href = lang === "de" ? node.dataset.deHref : node.dataset.ruHref;
       });
       document.querySelectorAll("[data-lang]").forEach((button) => {
         button.classList.toggle("is-active", button.dataset.lang === lang);
