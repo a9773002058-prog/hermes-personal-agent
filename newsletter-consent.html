@@ -20,7 +20,7 @@
 </head>
 <body>
   <main class="legal-page">
-    <a class="legal-back" href="landing/">Назад на лендинг</a>
+    <a class="legal-back" href="index.html">Назад на основной сайт</a>
 
     <article class="legal-content">
       <p class="section-kicker">Согласие на рассылку</p>
@@ -75,6 +75,12 @@
       if (!backLink) return;
 
       const params = new URLSearchParams(window.location.search);
+      if (params.get("back") === "home") {
+        backLink.href = "index.html";
+        backLink.textContent = "Назад на основной сайт";
+        return;
+      }
+
       if (params.get("back") === "post-payment") {
         backLink.href = "post-payment.html";
         backLink.textContent = "Назад на страницу после оплаты";
