@@ -13,7 +13,7 @@
   <meta property="og:type" content="website">
   <meta property="og:image" content="/veronika-sagitova-photo.jpg">
   <meta name="theme-color" content="#f7f4ef">
-  <link rel="stylesheet" href="styles.css?v=lang-header-20260525">
+  <link rel="stylesheet" href="styles.css?v=video-20260601">
 </head>
 <body>
   <header class="site-header" data-header>
@@ -24,11 +24,13 @@
     <nav class="nav" aria-label="Основная навигация">
       <a href="#about">Обо мне</a>
       <a href="#services">Услуги</a>
+      <a href="#risk-test">Тест риска</a>
       <a href="#why">Подход</a>
       <a href="#journal">Статьи</a>
       <a href="#contacts">Контакты</a>
     </nav>
     <div class="header-socials" aria-label="Социальные сети">
+      <a class="header-cta header-payment" href="https://veronikasagitova.com/" target="_blank" rel="noopener">Оплата консультации</a>
       <a class="header-cta" href="https://t.me/cardio_prevention" target="_blank" rel="noopener">Telegram</a>
       <a class="header-cta" href="https://www.instagram.com/sagitova_doc/" target="_blank" rel="noopener">Instagram</a>
     </div>
@@ -54,6 +56,19 @@
           <span>Focus</span>
           <strong>Сердце, сосуды, метаболизм, здоровое долголетие</strong>
         </div>
+      </div>
+    </section>
+
+    <section class="section audience-video" aria-labelledby="audience-video-title">
+      <div class="section-heading reveal">
+        <span class="section-kicker">Видео</span>
+        <h2 id="audience-video-title">Коротко о подходе к здоровью сердца и сосудов</h2>
+      </div>
+      <div class="video-shell reveal">
+        <video controls playsinline preload="metadata">
+          <source src="видео с субтитрами и музыкой .mp4" type="video/mp4">
+          Ваш браузер не поддерживает видео.
+        </video>
       </div>
     </section>
 
@@ -122,6 +137,95 @@
       </div>
     </section>
 
+    <section class="section risk-test" id="risk-test" aria-labelledby="risk-test-title">
+      <div class="section-heading reveal">
+        <span class="section-kicker">Instagram-тест</span>
+        <h2 id="risk-test-title">Предварительная оценка сердечно-сосудистого риска</h2>
+      </div>
+      <div class="risk-shell reveal" data-risk-widget>
+        <div class="risk-intro" data-risk-intro>
+          <p>Здравствуйте. Я помогу определить вашу категорию сердечно-сосудистого риска — это займёт 2–3 минуты. Для этого мне нужно собрать несколько ответов о вашем здоровье.</p>
+          <p>Нажимая «Продолжить», вы соглашаетесь на обработку этих данных в соответствии с политикой конфиденциальности. Указанная информация используется только для расчёта возможной категории риска и не передаётся третьим лицам.</p>
+          <div class="risk-actions">
+            <button class="btn btn-dark" type="button" data-risk-start>Продолжить</button>
+            <a class="btn btn-light" href="datenschutz.html">Узнать больше о политике конфиденциальности</a>
+          </div>
+        </div>
+
+        <form class="risk-form" data-risk-form hidden>
+          <label>
+            <span>Возраст</span>
+            <input type="number" name="age" min="18" max="100" inputmode="numeric" required>
+          </label>
+          <label>
+            <span>Пол</span>
+            <select name="sex" required>
+              <option value="">Выберите</option>
+              <option value="female">Женский</option>
+              <option value="male">Мужской</option>
+            </select>
+          </label>
+          <label>
+            <span>Курите ли вы сейчас</span>
+            <select name="smoking" required>
+              <option value="">Выберите</option>
+              <option value="current">Да</option>
+              <option value="recent">Бросил(а) менее 1 года назад</option>
+              <option value="former">Бросил(а) более 1 года назад</option>
+              <option value="never">Никогда не курил(а)</option>
+            </select>
+          </label>
+          <label>
+            <span>Систолическое давление, если знаете</span>
+            <input type="number" name="pressure" min="80" max="260" inputmode="numeric" placeholder="Например, 125">
+          </label>
+          <label>
+            <span>Общий холестерин или ЛПНП, если знаете</span>
+            <input type="number" name="cholesterol" min="1" max="15" step="0.1" inputmode="decimal" placeholder="Например, 5.2">
+          </label>
+          <label>
+            <span>Установлен ли диабет 2 типа</span>
+            <select name="diabetes" required>
+              <option value="">Выберите</option>
+              <option value="yes">Да</option>
+              <option value="no">Нет</option>
+              <option value="unknown">Не знаю</option>
+            </select>
+          </label>
+          <label>
+            <span>Были ли у близких родственников инфаркты или инсульты до 55 лет у мужчин или до 65 лет у женщин</span>
+            <select name="family" required>
+              <option value="">Выберите</option>
+              <option value="yes">Да</option>
+              <option value="no">Нет</option>
+              <option value="unknown">Не знаю</option>
+            </select>
+          </label>
+          <div class="risk-optional">
+            <label>
+              <span>Рост, см</span>
+              <input type="number" name="height" min="120" max="230" inputmode="numeric">
+            </label>
+            <label>
+              <span>Вес, кг</span>
+              <input type="number" name="weight" min="35" max="250" inputmode="numeric">
+            </label>
+          </div>
+          <p class="form-note">Если вы не знаете давление или показатели липидного обмена, оставьте поле пустым. Тест продолжится, а результат будет отмечен как предварительный.</p>
+          <button class="btn btn-dark" type="submit">Показать результат</button>
+        </form>
+
+        <div class="risk-result" data-risk-result hidden aria-live="polite">
+          <span class="risk-category" data-risk-category></span>
+          <p data-risk-message></p>
+          <div class="risk-actions">
+            <a class="btn btn-dark" href="article-metabolism.html">Получить гайд</a>
+            <a class="btn btn-light" href="https://veronikasagitova.com/landing/">Перейти к консультации</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section why" id="why">
       <div class="why-copy reveal">
         <span class="section-kicker">Почему выбирают меня</span>
@@ -158,7 +262,7 @@
       </div>
       <div class="contact-cta reveal">
         <p>Запишитесь на консультацию и перейдите к оплате через официальный лендинг.</p>
-        <a class="btn btn-dark" href="https://veronikasagitova.com/landing/?utm_source=ig&amp;utm_medium=social&amp;utm_content=link_in_bio&amp;fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnJpTgGFJQ4SmEwhe1wNBHJIah6y3fcQgU674X47YEKVoFsJYJ4wCbXHBNDTA_aem_5a9anpD4n6XMKuFbz25wpg">Оплатить консультацию</a>
+        <a class="btn btn-dark" href="https://veronikasagitova.com/landing/">Оплатить консультацию</a>
       </div>
     </section>
   </main>
@@ -168,8 +272,10 @@
       <strong>Dr Veronika Sagitova</strong>
       <p>Превентивная кардиология · Здоровое долголетие · Клинический нутрицолог-диетолог</p>
       <div class="footer-legal">
-        <a class="footer-link" href="datenschutz.html">Datenschutzerklärung</a>
-        <a class="footer-link" href="impressum.html">Impressum</a>
+        <a class="footer-link" href="impressum.html" data-legal-ru="Выходные данные" data-legal-de="Impressum" data-href-ru="impressum.html" data-href-de="impressum.html#de">Выходные данные</a>
+        <a class="footer-link" href="datenschutz.html" data-legal-ru="Политика конфиденциальности" data-legal-de="Datenschutzerklärung" data-href-ru="datenschutz.html" data-href-de="datenschutz.html#de">Политика конфиденциальности</a>
+        <a class="footer-link" href="terms.html" data-legal-ru="Пользовательское соглашение" data-legal-de="AGB" data-href-ru="terms.html" data-href-de="terms.html#de">Пользовательское соглашение</a>
+        <a class="footer-link" href="newsletter-consent.html" data-legal-ru="Согласие на рассылку" data-legal-de="Einwilligung Newsletter" data-href-ru="newsletter-consent.html" data-href-de="newsletter-consent.html#de">Согласие на рассылку</a>
       </div>
     </div>
     <p>Информация на сайте не заменяет очную диагностику и индивидуальную медицинскую консультацию.</p>
@@ -177,6 +283,28 @@
 
   <script src="script.js"></script>
   <script src="i18n.js?v=de-bdi-20260525"></script>
+  <script>
+    (() => {
+      const applyLegalLanguage = (lang) => {
+        const isGerman = lang === "de";
+        document.querySelectorAll("[data-legal-ru][data-legal-de]").forEach((link) => {
+          link.textContent = isGerman ? link.dataset.legalDe : link.dataset.legalRu;
+          link.href = isGerman ? link.dataset.hrefDe : link.dataset.hrefRu;
+        });
+      };
+
+      document.addEventListener("DOMContentLoaded", () => {
+        applyLegalLanguage(localStorage.getItem("siteLanguage") || document.documentElement.lang || "ru");
+      });
+
+      document.addEventListener("click", (event) => {
+        const button = event.target.closest("[data-lang-choice]");
+        if (button) {
+          window.setTimeout(() => applyLegalLanguage(button.dataset.langChoice), 0);
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
 

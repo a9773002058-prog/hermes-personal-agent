@@ -1406,13 +1406,37 @@
             <strong>Dr Veronika Sagitova</strong>
             <p>Превентивная кардиология · Здоровое долголетие · Клинический нутрицолог-диетолог</p>
             <div class="footer-legal">
-                <a class="footer-link" href="../datenschutz.html">Datenschutzerklärung</a>
-                <a class="footer-link" href="../impressum.html">Impressum</a>
+                <a class="footer-link" href="../impressum.html" data-legal-ru="Выходные данные" data-legal-de="Impressum" data-href-ru="../impressum.html" data-href-de="../impressum.html#de">Выходные данные</a>
+                <a class="footer-link" href="../datenschutz.html" data-legal-ru="Политика конфиденциальности" data-legal-de="Datenschutzerklärung" data-href-ru="../datenschutz.html" data-href-de="../datenschutz.html#de">Политика конфиденциальности</a>
+                <a class="footer-link" href="../terms.html" data-legal-ru="Пользовательское соглашение" data-legal-de="AGB" data-href-ru="../terms.html" data-href-de="../terms.html#de">Пользовательское соглашение</a>
+                <a class="footer-link" href="../newsletter-consent.html" data-legal-ru="Согласие на рассылку" data-legal-de="Einwilligung Newsletter" data-href-ru="../newsletter-consent.html" data-href-de="../newsletter-consent.html#de">Согласие на рассылку</a>
             </div>
         </div>
         <p>Информация на сайте не заменяет очную диагностику и индивидуальную медицинскую консультацию.</p>
     </footer>
     <script src="i18n-landing.js?v=legal-buttons-20260525"></script>
+    <script>
+        (() => {
+            const applyLegalLanguage = (lang) => {
+                const isGerman = lang === "de";
+                document.querySelectorAll("[data-legal-ru][data-legal-de]").forEach((link) => {
+                    link.textContent = isGerman ? link.dataset.legalDe : link.dataset.legalRu;
+                    link.href = isGerman ? link.dataset.hrefDe : link.dataset.hrefRu;
+                });
+            };
+
+            document.addEventListener("DOMContentLoaded", () => {
+                applyLegalLanguage(localStorage.getItem("landingLanguage") || document.documentElement.lang || "ru");
+            });
+
+            document.addEventListener("click", (event) => {
+                const button = event.target.closest("[data-landing-lang]");
+                if (button) {
+                    window.setTimeout(() => applyLegalLanguage(button.dataset.landingLang), 0);
+                }
+            });
+        })();
+    </script>
 </body>
 </html>
 

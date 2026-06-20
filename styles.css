@@ -122,6 +122,11 @@ textarea {
   border-radius: 999px;
 }
 
+.header-payment {
+  background: var(--ink);
+  color: var(--white);
+}
+
 .header-socials {
   display: flex;
   justify-self: end;
@@ -385,6 +390,28 @@ h3 {
   line-height: 1.5;
 }
 
+.audience-video {
+  padding-top: clamp(68px, 8vw, 112px);
+  padding-bottom: clamp(68px, 8vw, 112px);
+}
+
+.video-shell {
+  width: min(100%, 980px);
+  margin: 0 auto;
+  background: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.video-shell video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: var(--ink);
+}
+
 .about-grid,
 .why,
 .contacts {
@@ -581,6 +608,93 @@ h3 {
 
 .form-note.is-success {
   color: var(--sage);
+}
+
+.risk-test {
+  background: var(--smoke);
+}
+
+.risk-shell {
+  display: grid;
+  gap: 26px;
+  max-width: 980px;
+  padding: clamp(22px, 4vw, 38px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.risk-intro p,
+.risk-result p {
+  max-width: 820px;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.risk-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.risk-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.risk-form label {
+  display: grid;
+  gap: 8px;
+  color: var(--ink);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.risk-form label span {
+  min-height: 40px;
+  color: var(--muted);
+}
+
+.risk-form input,
+.risk-form select {
+  min-height: 46px;
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+  color: var(--ink);
+  padding: 10px 12px;
+}
+
+.risk-optional {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.risk-form .form-note,
+.risk-form > button,
+.risk-optional {
+  grid-column: 1 / -1;
+}
+
+.risk-form > button {
+  width: fit-content;
+}
+
+.risk-category {
+  display: inline-flex;
+  width: fit-content;
+  margin-bottom: 14px;
+  padding: 9px 13px;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 650;
 }
 
 .footer {
@@ -800,6 +914,15 @@ h3 {
     display: none;
   }
 
+  .header-socials .header-payment {
+    display: inline-flex;
+    align-items: center;
+    min-height: 38px;
+    padding: 9px 12px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
   .language-switch {
     grid-column: auto;
   }
@@ -826,6 +949,16 @@ h3 {
   }
 
   .hero-actions .btn {
+    width: 100%;
+  }
+
+  .risk-form,
+  .risk-optional {
+    grid-template-columns: 1fr;
+  }
+
+  .risk-form > button,
+  .risk-actions .btn {
     width: 100%;
   }
 
