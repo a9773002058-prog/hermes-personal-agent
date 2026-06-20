@@ -632,6 +632,10 @@ h3 {
   line-height: 1.7;
 }
 
+.risk-result p {
+  white-space: pre-line;
+}
+
 .risk-actions {
   display: flex;
   flex-wrap: wrap;

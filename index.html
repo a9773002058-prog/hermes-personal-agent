@@ -179,11 +179,16 @@
           </label>
           <label>
             <span>Систолическое давление, если знаете</span>
-            <input type="number" name="pressure" min="80" max="260" inputmode="numeric" placeholder="Например, 125">
+            <input type="number" name="systolicPressure" min="80" max="260" inputmode="numeric" placeholder="Например, 125">
           </label>
           <label>
-            <span>Общий холестерин или ЛПНП, если знаете</span>
-            <input type="number" name="cholesterol" min="1" max="15" step="0.1" inputmode="decimal" placeholder="Например, 5.2">
+            <span>Есть ли инфаркт, инсульт, стентирование, АКШ или периферический атеросклероз</span>
+            <select name="ascvd" required>
+              <option value="">Выберите</option>
+              <option value="yes">Да</option>
+              <option value="no">Нет</option>
+              <option value="unknown">Не знаю</option>
+            </select>
           </label>
           <label>
             <span>Установлен ли диабет 2 типа</span>
@@ -195,13 +200,34 @@
             </select>
           </label>
           <label>
-            <span>Были ли у близких родственников инфаркты или инсульты до 55 лет у мужчин или до 65 лет у женщин</span>
-            <select name="family" required>
+            <span>Есть ли хроническая болезнь почек или eGFR ниже 60</span>
+            <select name="ckd" required>
               <option value="">Выберите</option>
               <option value="yes">Да</option>
               <option value="no">Нет</option>
               <option value="unknown">Не знаю</option>
             </select>
+          </label>
+          <label>
+            <span>Были ли у близких родственников инфаркты или инсульты до 55 лет у мужчин или до 65 лет у женщин</span>
+            <select name="familyHistory" required>
+              <option value="">Выберите</option>
+              <option value="yes">Да</option>
+              <option value="no">Нет</option>
+              <option value="unknown">Не знаю</option>
+            </select>
+          </label>
+          <label>
+            <span>Общий холестерин, если знаете</span>
+            <input type="number" name="totalCholesterol" min="1" max="400" step="0.1" inputmode="decimal" placeholder="ммоль/л или мг/дл">
+          </label>
+          <label>
+            <span>HDL / ЛПВП, «хороший» холестерин</span>
+            <input type="number" name="hdlCholesterol" min="0.3" max="150" step="0.1" inputmode="decimal" placeholder="ммоль/л или мг/дл">
+          </label>
+          <label>
+            <span>LDL / ЛПНП, «плохой» холестерин</span>
+            <input type="number" name="ldlCholesterol" min="0.3" max="400" step="0.1" inputmode="decimal" placeholder="ммоль/л или мг/дл">
           </label>
           <div class="risk-optional">
             <label>
@@ -213,7 +239,7 @@
               <input type="number" name="weight" min="35" max="250" inputmode="numeric">
             </label>
           </div>
-          <p class="form-note">Если вы не знаете давление или показатели липидного обмена, оставьте поле пустым. Тест продолжится, а результат будет отмечен как предварительный.</p>
+          <p class="form-note">Если вы не знаете давление или показатели липидного обмена, оставьте поле пустым. Холестерин можно вводить в ммоль/л или мг/дл. Тест продолжится, а результат будет отмечен как предварительный.</p>
           <button class="btn btn-dark" type="submit">Показать результат</button>
         </form>
 
@@ -221,7 +247,7 @@
           <span class="risk-category" data-risk-category></span>
           <p data-risk-message></p>
           <div class="risk-actions">
-            <a class="btn btn-dark" href="article-metabolism.html">Получить гайд</a>
+            <a class="btn btn-dark" href="https://t.me/cardio_prevention">Получить гайд</a>
             <a class="btn btn-light" href="https://veronikasagitova.com/landing/">Перейти к консультации</a>
           </div>
         </div>
