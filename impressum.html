@@ -71,7 +71,7 @@
 </head>
 <body>
   <main class="legal-page">
-    <a class="legal-back" href="post-payment.html">Zurück zur Seite nach der Zahlung</a>
+    <a class="legal-back" href="landing/">Zurück zur Landingpage</a>
 
     <article class="legal-content" id="de">
       <p class="section-kicker">Impressum</p>
@@ -114,6 +114,12 @@
       if (!backLink) return;
 
       const params = new URLSearchParams(window.location.search);
+      if (params.get("back") === "post-payment") {
+        backLink.href = "post-payment.html";
+        backLink.textContent = "Zurück zur Seite nach der Zahlung";
+        return;
+      }
+
       if (params.get("back") === "landing") {
         backLink.href = "landing/";
         backLink.textContent = "Zurück zur Landingpage";
