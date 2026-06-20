@@ -108,5 +108,17 @@
       <p>Dr. Veronika Sagitova<br>Steinstraße 36<br>14712 Rathenow<br>Deutschland</p>
     </article>
   </main>
+  <script>
+    (() => {
+      const backLink = document.querySelector(".legal-back");
+      if (!backLink) return;
+
+      const params = new URLSearchParams(window.location.search);
+      if (params.get("back") === "landing") {
+        backLink.href = "landing/";
+        backLink.textContent = "Zurück zur Landingpage";
+      }
+    })();
+  </script>
 </body>
 </html>

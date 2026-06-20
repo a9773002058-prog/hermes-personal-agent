@@ -187,5 +187,17 @@
       <p>Juni 2026.</p>
     </article>
   </main>
+  <script>
+    (() => {
+      const backLink = document.querySelector(".legal-back");
+      if (!backLink) return;
+
+      const params = new URLSearchParams(window.location.search);
+      if (params.get("back") === "landing") {
+        backLink.href = "landing/";
+        backLink.textContent = "Назад на лендинг";
+      }
+    })();
+  </script>
 </body>
 </html>

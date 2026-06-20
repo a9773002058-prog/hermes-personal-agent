@@ -69,5 +69,17 @@
       <p>Durch Anklicken der Schaltfläche „Guide erhalten“, „Anmelden“, „Informationen erhalten“, „Termin vereinbaren“ oder einer vergleichbaren Schaltfläche bestätigt der Nutzer seine Einwilligung in elektronischer Form.</p>
     </article>
   </main>
+  <script>
+    (() => {
+      const backLink = document.querySelector(".legal-back");
+      if (!backLink) return;
+
+      const params = new URLSearchParams(window.location.search);
+      if (params.get("back") === "landing") {
+        backLink.href = "landing/";
+        backLink.textContent = "Назад на лендинг";
+      }
+    })();
+  </script>
 </body>
 </html>
