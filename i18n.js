@@ -28,7 +28,7 @@ const translationsDe = {
   "Превентивная кардиология · Здоровое долголетие · Клинический нутрицолог-диетолог": "Präventive Kardiologie · Gesundes Altern · Klinische Ernährungsmedizin",
   "Европейская подготовка": "Europäische Weiterbildung",
   "Специализация": "Spezialisierung",
-  "Превентивная кардиология · Геронтология · Клинический нутрицолог-диетолог": "Präventive Kardiologie · Gerontologie · Klinische Ernährungsmedizin",
+  "Превентивная кардиология · Клинический нутрицолог-диетолог": "Präventive Kardiologie · Gerontologie · Klinische Ernährungsmedizin",
   "Профессиональные сообщества": "Fachgesellschaften",
   "Услуги": "Leistungen",
   "Медицинская стратегия вместо разрозненных рекомендаций": "Medizinische Strategie statt einzelner Empfehlungen",

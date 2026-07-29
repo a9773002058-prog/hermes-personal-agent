@@ -37,7 +37,7 @@ const landingTranslationsDe = {
   "Квалификация": "Qualifikation",
   "Dr (RUS) Veronika Sagitova, врач терапевт-кадиолог": "Dr (RUS) Veronika Sagitova, Kardiologin",
   "Европейская подготовка: HDZ NRW · Innere Medizin und Kardiologie": "Europäische Weiterbildung: HDZ NRW · Innere Medizin und Kardiologie",
-  "Специализация: Превентивная кардиология · Геронтология · Клинический нутрицолог-диетолог": "Spezialisierung: Präventive Kardiologie · Gerontologie · Klinische Ernährungsmedizin",
+  "Специализация: Превентивная кардиология · Клинический нутрицолог-диетолог": "Spezialisierung: Präventive Kardiologie · Gerontologie · Klinische Ernährungsmedizin",
   "Профессиональные сообщества: EAPC · BDI": "Fachgesellschaften: EAPC · BDI",
   "Что вы получаете": "Was Sie erhalten",
   "Не просто рекомендации, а персональную стратегию управления здоровьем": "Nicht nur Empfehlungen, sondern eine persönliche Gesundheitsstrategie",
