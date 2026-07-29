@@ -28,7 +28,7 @@ const translationsDe = {
   "Превентивная кардиология · Здоровое долголетие · Клинический нутрицолог-диетолог": "Präventive Kardiologie · Gesundes Altern · Klinische Ernährungsmedizin",
   "Европейская подготовка": "Europäische Weiterbildung",
   "Специализация": "Spezialisierung",
-  "Превентивная кардиология · специалист по ортомолекулярной медицине (FOM, München) · Клинический нутрицолог-диетолог (Москва)": "Präventive Kardiologie · Fachärztin für orthomolekulare Medizin (FOM, München) · Klinische Ernährungsmedizin (Moskau)",
+  "Превентивная кардиология · специалист по ортомолекулярной медицине (FOM, München) · Клинический нутрицолог-диетолог (Москва)": "Präventive Kardiologie · Ortomolekulere Medizin (FOM, München) · Klinische Ernährungsmedizin (Moskau)",
   "Профессиональные сообщества": "Fachgesellschaften",
   "Услуги": "Leistungen",
   "Медицинская стратегия вместо разрозненных рекомендаций": "Medizinische Strategie statt einzelner Empfehlungen",
