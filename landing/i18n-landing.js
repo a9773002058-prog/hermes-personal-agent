@@ -4,7 +4,7 @@ const landingTranslationsDe = {
   "для тех, кто хочет сохранить сердце, энергию и активное долголетие": "für Menschen, die Herz, Energie und aktives Altern erhalten möchten",
   "Комплексная оценка сердечно-сосудистого и метаболического здоровья": "Umfassende Bewertung der Herz-Kreislauf- und Stoffwechselgesundheit",
   "с разработкой персональной стратегии лечения и профилактики": "mit Entwicklung einer persönlichen Strategie für Behandlung und Prävention",
-  "Dr (RUS) Veronika Sagitova": "Dr (RUS) Veronika Sagitova",
+  "Dr. Veronika Sagitova (RUS)": "Dr. Veronika Sagitova (RUS)",
   "Врач терапевт кардиолог, диетолог, специалист по ортомолекулярной медицине": "Ärztin für Innere Medizin und Kardiologie, Ernährungsmedizinerin, Ortomolekulere Medizin",
   "Практика в Германии": "",
   "Член Европейской ассоциации превентивной кардиологии (EAPC) и Профессиональной ассоциации немецких врачей-интернистов (BDI)": "Mitglied der European Association of Preventive Cardiology (EAPC) und des Berufsverbands Deutscher Internistinnen und Internisten e.V. (BDI)",
@@ -28,14 +28,14 @@ const landingTranslationsDe = {
   "Второе мнение": "Zweitmeinung",
   "Экспертная оценка диагноза и лечения с позиции современной клинической медицины.": "Fachliche Bewertung von Diagnose und Therapie aus Sicht moderner klinischer Medizin.",
   "О враче": "Über die Ärztin",
-  "Dr (RUS) Veronika Sagitova": "Dr (RUS) Veronika Sagitova",
-  "Я — Dr (RUS) Veronika Sagitova, врач терапевт-кадиолог, специалист в области превентивной кардиологии, клинический нутрицолог-диетолог, специалист по ортомолекулярной медицине.": "Ich bin Dr (RUS) Veronika Sagitova, Kardiologin, spezialisiert auf präventive Kardiologie, klinische Ernährungsmedizin und Ortomolekulere Medizin.",
+  "Dr. Veronika Sagitova (RUS)": "Dr. Veronika Sagitova (RUS)",
+  "Я — Dr. Veronika Sagitova (RUS), врач терапевт-кадиолог, специалист в области превентивной кардиологии, клинический нутрицолог-диетолог, специалист по ортомолекулярной медицине.": "Ich bin Dr. Veronika Sagitova (RUS), Kardiologin, spezialisiert auf präventive Kardiologie, klinische Ernährungsmedizin und Ortomolekulere Medizin.",
   "Мой профессиональный путь объединяет многолетний клинический опыт работы в сердечно-сосудистых клиниках Москвы и Германии, а также европейскую подготовку в области внутренней медицины и кардиологии.": "Mein beruflicher Weg verbindet langjährige klinische Erfahrung in kardiovaskulären Kliniken in Moskau und Deutschland mit europäischer Weiterbildung in Innerer Medizin und Kardiologie.",
   "Facharztweiterbildung по Innere Medizin und Kardiologie проходила в HDZ NRW — Herz- und Diabeteszentrum Nordrhein-Westfalen, одном из ведущих кардиологических центров Европы.": "Die Facharztweiterbildung in Innerer Medizin und Kardiologie erfolgte am HDZ NRW - Herz- und Diabeteszentrum Nordrhein-Westfalen, einem der führenden kardiologischen Zentren Europas.",
   "Являюсь членом European Association of Preventive Cardiology (EAPC) и Профессиональной ассоциации немецких врачей-интернистов (BDI).": "Ich bin Mitglied der European Association of Preventive Cardiology (EAPC) und des Berufsverbands Deutscher Internistinnen und Internisten e.V. (BDI).",
   "В своей работе соединяю доказательную кардиологию, функциональную диагностику и современный подход к здоровому долголетию: не только лечение заболевания, но и раннее выявление рисков, профилактику сосудистого старения и выстраивание долгосрочной стратегии здоровья.": "In meiner Arbeit verbinde ich evidenzbasierte Kardiologie, Funktionsdiagnostik und einen modernen Longevity-Ansatz: nicht nur Behandlung, sondern frühe Risikoerkennung, Prävention vaskulärer Alterung und langfristige Gesundheitsstrategie.",
   "Квалификация": "Qualifikation",
-  "Dr (RUS) Veronika Sagitova, врач терапевт-кадиолог": "Dr (RUS) Veronika Sagitova, Kardiologin",
+  "Dr. Veronika Sagitova (RUS), врач терапевт-кадиолог": "Dr. Veronika Sagitova (RUS), Kardiologin",
   "Европейская подготовка: HDZ NRW · Innere Medizin und Kardiologie": "Europäische Weiterbildung: HDZ NRW · Innere Medizin und Kardiologie",
   "Специализация: Превентивная кардиология · специалист по ортомолекулярной медицине (FOM, München) · Клинический нутрицолог-диетолог (Москва)": "Spezialisierung: Präventive Kardiologie · Ortomolekulere Medizin (FOM, München) · Klinische Ernährungsmedizin (Moskau)",
   "Профессиональные сообщества: EAPC · BDI": "Fachgesellschaften: EAPC · BDI",
@@ -95,7 +95,7 @@ const landingTranslationsDe = {
 };
 
 const landingMetaDe = {
-  "Dr (RUS) Veronika Sagitova | Профилактическая кардиология и долголетие": "Dr (RUS) Veronika Sagitova | Präventive Kardiologie und Longevity"
+  "Dr. Veronika Sagitova (RUS) | Профилактическая кардиология и долголетие": "Dr. Veronika Sagitova (RUS) | Präventive Kardiologie und Longevity"
 };
 
 const keepSpace = (source, translated) => `${source.match(/^\s*/)[0]}${translated}${source.match(/\s*$/)[0]}`;
