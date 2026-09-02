@@ -844,7 +844,7 @@ h3 {
   transform: translateY(0);
 }
 
-@media (max-width: 1320px) {
+@media (max-width: 1800px) {
   .nav {
     position: fixed;
     inset: 72px 12px auto 12px;
