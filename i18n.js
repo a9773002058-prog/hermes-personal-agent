@@ -18,13 +18,13 @@ const translationsDe = {
   "Здоровое долголетие через диагностику, питание, сон, активность и метаболическую коррекцию.": "Gesundes Altern durch Diagnostik, Ernährung, Schlaf, Aktivität und metabolische Korrektur.",
   "Клинически выверенная информация и консультации для русскоязычных пациентов в Германии и Европе.": "Klinisch fundierte Informationen und Beratungen für russischsprachige Patientinnen und Patienten in Deutschland und Europa.",
   "О враче": "Über die Ärztin",
-  "Я — Dr. Veronika Sagitova (RUS), к.м.н., врач терапевт-кадиолог, специалист в области превентивной кардиологии, клинический нутрицолог-диетолог.": "Ich bin Dr. Veronika Sagitova (RUS), Kardiologin, spezialisiert auf präventive Kardiologie, klinische Ernährungsmedizin.",
+  "Я — Dr(RUS) Veronika Sagitova, к.м.н., врач терапевт-кадиолог, специалист в области превентивной кардиологии, клинический нутрицолог-диетолог.": "Ich bin Dr(RUS) Veronika Sagitova, Kardiologin, spezialisiert auf präventive Kardiologie, klinische Ernährungsmedizin.",
   "Мой профессиональный путь объединяет многолетний клинический опыт работы в сердечно-сосудистых клиниках Москвы и Германии, а также европейскую подготовку в области внутренней медицины и кардиологии.": "Mein beruflicher Weg verbindet langjährige klinische Erfahrung in kardiovaskulären Kliniken in Moskau und Deutschland mit europäischer Weiterbildung in Innerer Medizin und Kardiologie.",
   "Facharztweiterbildung по Innere Medizin und Kardiologie проходила в HDZ NRW — Herz- und Diabeteszentrum Nordrhein-Westfalen, одном из ведущих кардиологических центров Европы.": "Die Facharztweiterbildung in Innerer Medizin und Kardiologie erfolgte am HDZ NRW — Herz- und Diabeteszentrum Nordrhein-Westfalen, einem der führenden kardiologischen Zentren Europas.",
   "Являюсь членом European Association of Preventive Cardiology (EAPC) и Профессиональной ассоциации немецких врачей-интернистов (BDI).": "Ich bin Mitglied der European Association of Preventive Cardiology (EAPC) und des Berufsverbands Deutscher Internistinnen und Internisten e.V. (BDI).",
   "В своей работе соединяю доказательную кардиологию, функциональную диагностику и современный подход к здоровому долголетию: не только лечение заболевания, но и раннее выявление рисков, профилактику сосудистого старения и выстраивание долгосрочной стратегии здоровья.": "In meiner Arbeit verbinde ich evidenzbasierte Kardiologie, Funktionsdiagnostik und einen modernen Longevity-Ansatz: nicht nur Behandlung, sondern frühe Risikoerkennung, Prävention vaskulärer Alterung und langfristige Gesundheitsstrategie.",
   "Квалификация": "Qualifikation",
-  "Dr. Veronika Sagitova (RUS), к.м.н., врач терапевт-кадиолог": "Dr. Veronika Sagitova (RUS), Kardiologin",
+  "Dr(RUS) Veronika Sagitova, к.м.н., врач терапевт-кадиолог": "Dr(RUS) Veronika Sagitova, Kardiologin",
   "Превентивная кардиология · Здоровое долголетие · Клинический нутрицолог-диетолог": "Präventive Kardiologie · Gesundes Altern · Klinische Ernährungsmedizin",
   "Европейская подготовка": "Europäische Weiterbildung",
   "Специализация": "Spezialisierung",
@@ -254,13 +254,13 @@ const translationsDe = {
 };
 
 const metaDe = {
-  "Dr. Veronika Sagitova (RUS) | Превентивная кардиология": "Dr. Veronika Sagitova (RUS) | Präventive Kardiologie",
-  "Артериальная гипертензия | Dr. Veronika Sagitova (RUS)": "Arterielle Hypertonie | Dr. Veronika Sagitova (RUS)",
-  "Оценка сердечно-сосудистых рисков | Dr. Veronika Sagitova (RUS)": "Bewertung kardiovaskulärer Risiken | Dr. Veronika Sagitova (RUS)",
-  "Метаболизм и профилактика | Dr. Veronika Sagitova (RUS)": "Stoffwechsel und Prävention | Dr. Veronika Sagitova (RUS)",
-  "Профилактика инфаркта и инсульта | Dr. Veronika Sagitova (RUS)": "Prävention von Herzinfarkt und Schlaganfall | Dr. Veronika Sagitova (RUS)",
-  "Питание и метаболическое здоровье | Dr. Veronika Sagitova (RUS)": "Ernährung und metabolische Gesundheit | Dr. Veronika Sagitova (RUS)",
-  "Превентивная кардиология и долголетие | Dr. Veronika Sagitova (RUS)": "Präventive Kardiologie und Longevity | Dr. Veronika Sagitova (RUS)"
+  "Dr(RUS) Veronika Sagitova | Превентивная кардиология": "Dr(RUS) Veronika Sagitova | Präventive Kardiologie",
+  "Артериальная гипертензия | Dr(RUS) Veronika Sagitova": "Arterielle Hypertonie | Dr(RUS) Veronika Sagitova",
+  "Оценка сердечно-сосудистых рисков | Dr(RUS) Veronika Sagitova": "Bewertung kardiovaskulärer Risiken | Dr(RUS) Veronika Sagitova",
+  "Метаболизм и профилактика | Dr(RUS) Veronika Sagitova": "Stoffwechsel und Prävention | Dr(RUS) Veronika Sagitova",
+  "Профилактика инфаркта и инсульта | Dr(RUS) Veronika Sagitova": "Prävention von Herzinfarkt und Schlaganfall | Dr(RUS) Veronika Sagitova",
+  "Питание и метаболическое здоровье | Dr(RUS) Veronika Sagitova": "Ernährung und metabolische Gesundheit | Dr(RUS) Veronika Sagitova",
+  "Превентивная кардиология и долголетие | Dr(RUS) Veronika Sagitova": "Präventive Kardiologie und Longevity | Dr(RUS) Veronika Sagitova"
 };
 
 const preserveSpace = (original, translated) => `${original.match(/^\s*/)[0]}${translated}${original.match(/\s*$/)[0]}`;
