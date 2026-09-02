@@ -36,7 +36,7 @@ const landingTranslationsDe = {
   "В своей работе соединяю доказательную кардиологию, функциональную диагностику и современный подход к здоровому долголетию: не только лечение заболевания, но и раннее выявление рисков, профилактику сосудистого старения и выстраивание долгосрочной стратегии здоровья.": "In meiner Arbeit verbinde ich evidenzbasierte Kardiologie, Funktionsdiagnostik und einen modernen Longevity-Ansatz: nicht nur Behandlung, sondern frühe Risikoerkennung, Prävention vaskulärer Alterung und langfristige Gesundheitsstrategie.",
   "Квалификация": "Qualifikation",
   "Dr(RUS) Veronika Sagitova, врач терапевт-кадиолог": "Dr(RUS) Veronika Sagitova, Kardiologin",
-  "Европейская подготовка: HDZ NRW · Innere Medizin und Kardiologie": "Europäische Weiterbildung: HDZ NRW · Innere Medizin und Kardiologie",
+  "Европейская подготовка: HDZ NRW · Innere Medizin und Kardiologie · Zusatzbezeichnung Ernährungsmedizin": "Europäische Weiterbildung: HDZ NRW · Innere Medizin und Kardiologie · Zusatzbezeichnung Ernährungsmedizin",
   "Специализация: Превентивная кардиология · специалист по ортомолекулярной медицине (FOM, München) · Клинический нутрицолог-диетолог (Москва)": "Spezialisierung: Präventive Kardiologie · Ortomolekulere Medizin (FOM, München) · Klinische Ernährungsmedizin (Moskau)",
   "Профессиональные сообщества: EAPC · BDI": "Fachgesellschaften: EAPC · BDI",
   "Что вы получаете": "Was Sie erhalten",
