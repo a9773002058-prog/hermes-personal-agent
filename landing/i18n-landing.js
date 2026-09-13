@@ -1,6 +1,6 @@
 const landingTranslationsDe = {
   "Оплата": "Zahlung",
-  "Кардиология и превентивная медицина": "Kardiologie und Präventivmedizin",
+  "Кардиология": "Kardiologie",
   "для тех, кто хочет сохранить сердце, энергию и активное долголетие": "für Menschen, die Herz, Energie und aktives Altern erhalten möchten",
   "Комплексная оценка сердечно-сосудистого и метаболического здоровья": "Umfassende Bewertung der Herz-Kreislauf- und Stoffwechselgesundheit",
   "с разработкой персональной стратегии лечения и профилактики": "mit Entwicklung einer persönlichen Strategie für Behandlung und Prävention",

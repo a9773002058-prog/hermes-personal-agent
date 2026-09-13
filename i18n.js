@@ -9,7 +9,7 @@ const translationsDe = {
   "Социальные сети": "Soziale Netzwerke",
   "Ключевые направления": "Schwerpunkte",
   "Preventive cardiology · Здоровое долголетие · Germany": "Präventive Kardiologie · Gesundes Altern · Deutschland",
-  "Превентивная кардиология и медицина долголетия": "Präventive Kardiologie und Longevity-Medizin",
+  "Кардиология и медицина долголетия": "Kardiologie und Longevity-Medizin",
   "Доказательный подход к профилактике сердечно-сосудистых заболеваний, здоровому долголетию, метаболическому здоровью, питанию и долгосрочной стратегии здорового старения.": "Ein evidenzbasierter Ansatz zur Prävention von Herz-Kreislauf-Erkrankungen, für gesundes Altern, metabolische Gesundheit, Ernährung und eine langfristige Strategie für gesundes Älterwerden.",
   "Telegram-канал": "Telegram-Kanal",
   "Сердце, сосуды, метаболизм, здоровое долголетие": "Herz, Gefäße, Stoffwechsel, gesundes Altern",
@@ -75,7 +75,7 @@ const translationsDe = {
   "Питание и метаболическое здоровье без крайностей": "Ernährung und metabolische Gesundheit ohne Extreme",
   "Практичный подход клинического нутрицолога-диетолога для людей с плотным графиком.": "Praktischer Ansatz der klinischen Ernährungsmedizin für Menschen mit dichtem Alltag.",
   "Долголетие": "Longevity",
-  "Превентивная кардиология и долголетие: измеримые решения для долгосрочного здоровья": "Präventive Kardiologie und Longevity: messbare Lösungen für langfristige Gesundheit",
+  "Кардиология и долголетие: измеримые решения для долгосрочного здоровья": "Kardiologie und Longevity: messbare Lösungen für langfristige Gesundheit",
   "Сердце, сосуды, метаболизм и здоровое долголетие.": "Herz, Gefäße, Stoffwechsel und gesundes Altern.",
   "Записаться на консультацию": "Beratung buchen",
   "Запишитесь на консультацию и перейдите к оплате через официальный лендинг.": "Buchen Sie eine Beratung und gehen Sie über die offizielle Landingpage zur Zahlung.",
@@ -118,7 +118,7 @@ const translationsDe = {
   "Подходы к коррекции": "Korrekturansätze",
   "Когда нужна медикаментозная терапия": "Wann Medikamente nötig sind",
   "Индивидуальный подход": "Individueller Ansatz",
-  "Долголетие · Превентивная кардиология": "Longevity · Präventive Kardiologie",
+  "Долголетие · Кардиология": "Longevity · Kardiologie",
   "Что лежит в основе профилактики": "Grundlagen der Prävention",
   "Ключевые направления": "Zentrale Bereiche",
   "Симптомы": "Symptome",
@@ -254,13 +254,13 @@ const translationsDe = {
 };
 
 const metaDe = {
-  "Dr(RUS) Veronika Sagitova | Превентивная кардиология": "Dr(RUS) Veronika Sagitova | Präventive Kardiologie",
+  "Dr(RUS) Veronika Sagitova | Кардиология": "Dr(RUS) Veronika Sagitova | Kardiologie",
   "Артериальная гипертензия | Dr(RUS) Veronika Sagitova": "Arterielle Hypertonie | Dr(RUS) Veronika Sagitova",
   "Оценка сердечно-сосудистых рисков | Dr(RUS) Veronika Sagitova": "Bewertung kardiovaskulärer Risiken | Dr(RUS) Veronika Sagitova",
   "Метаболизм и профилактика | Dr(RUS) Veronika Sagitova": "Stoffwechsel und Prävention | Dr(RUS) Veronika Sagitova",
   "Профилактика инфаркта и инсульта | Dr(RUS) Veronika Sagitova": "Prävention von Herzinfarkt und Schlaganfall | Dr(RUS) Veronika Sagitova",
   "Питание и метаболическое здоровье | Dr(RUS) Veronika Sagitova": "Ernährung und metabolische Gesundheit | Dr(RUS) Veronika Sagitova",
-  "Превентивная кардиология и долголетие | Dr(RUS) Veronika Sagitova": "Präventive Kardiologie und Longevity | Dr(RUS) Veronika Sagitova"
+  "Кардиология и долголетие | Dr(RUS) Veronika Sagitova": "Kardiologie und Longevity | Dr(RUS) Veronika Sagitova"
 };
 
 const preserveSpace = (original, translated) => `${original.match(/^\s*/)[0]}${translated}${original.match(/\s*$/)[0]}`;
