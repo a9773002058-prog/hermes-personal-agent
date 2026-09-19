@@ -54,7 +54,7 @@ const translationsDe = {
   "Анонсы новых гайдов, полезные разборы и информация о покупке публикуются в Telegram-канале проекта.": "Ankündigungen neuer Ratgeber, hilfreiche Analysen und Kaufinformationen erscheinen im Telegram-Kanal des Projekts.",
   "Медицинский гайд": "Medizinischer Ratgeber",
   "Одна выбранная тема, понятные объяснения, практические ориентиры и чек-лист. Цифровой формат PDF.": "Ein ausgewähltes Thema, verständliche Erklärungen, praktische Orientierung und Checkliste. Digitales PDF-Format.",
-  "Оплатить гайд — 20 €": "Ratgeber bezahlen – 20 €",
+  "Перейти к оплате — 20 €": "Zur Zahlung – 20 €",
   "Сборник медицинских гайдов": "Sammlung medizinischer Ratgeber",
   "Несколько взаимосвязанных материалов для системного изучения выбранного направления.": "Mehrere zusammengehörige Materialien zur systematischen Vertiefung des gewählten Themas.",
   "Купить сборник — 50 €": "Sammlung kaufen – 50 €",
